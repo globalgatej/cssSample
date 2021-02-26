@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-blend-mode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: "Helvetica Neue",
+                Arial,
+                "Hiragino Kaku Gothic ProN",
+                "Hiragino Sans",
+                Meiryo,
+                sans-serif;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+
+        .background {
+            width: 100%;
+            height: 200px;
+            background: url(img/filter.jpg) no-repeat center center #0f9494;
+            background-size: contain
+        }
+
+        .multiply {
+            background-blend-mode: multiply;
+        }
+
+        .screen {
+            background-blend-mode: screen;
+        }
+
+        .overlay {
+            background-blend-mode: overlay;
+        }
+
+        .darken {
+            background-blend-mode: darken;
+        }
+
+        .lighten {
+            background-blend-mode: lighten;
+        }
+
+        .color-dodge {
+            background-blend-mode: color-dodge;
+        }
+
+        .color-burn {
+            background-blend-mode: color-burn;
+        }
+
+        .hard-light {
+            background-blend-mode: hard-light;
+        }
+
+        .soft-light {
+            background-blend-mode: soft-light;
+        }
+
+        .difference {
+            background-blend-mode: difference;
+        }
+
+        .exclusion {
+            background-blend-mode: exclusion;
+        }
+
+        .hue {
+            background-blend-mode: hue;
+        }
+
+        .saturation {
+            background-blend-mode: saturation;
+        }
+
+        .color {
+            background-blend-mode: color;
+        }
+
+        .luminosity {
+            background-blend-mode: luminosity;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row py-4">
+            <div class="col">
+                <h1>background-blend-modeの例</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>装飾なし</h2>
+                    </div>
+
+                    <div class="background">
+
+                    </div>
+
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0"><code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>multiply</h2>
+                    </div>
+                    <div class="background multiply">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: multiply;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>screen</h2>
+                    </div>
+                    <div class="background screen">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: screen;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>overlay</h2>
+                    </div>
+                    <div class="background overlay">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: overlay;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>darken</h2>
+                    </div>
+                    <div class="background darken">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: darken;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>lighten</h2>
+                    </div>
+                    <div class="background lighten">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: lighten;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>color-dodge</h2>
+                    </div>
+
+                    <div class="background color-dodge">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: color-dodge;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>color-burn</h2>
+                    </div>
+                    <div class="background color-burn">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: color-burn;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>hard-light</h2>
+                    </div>
+                    <div class="background hard-light">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: hard-light;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>soft-light</h2>
+                    </div>
+                    <div class="background soft-light">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: soft-light;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>difference</h2>
+                    </div>
+                    <div class="background difference">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: difference;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>exclusion</h2>
+                    </div>
+                    <div class="background exclusion">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: exclusion;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>hue</h2>
+                    </div>
+                    <div class="background hue">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: hue;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>saturation</h2>
+                    </div>
+                    <div class="background saturation">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: saturation;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>color</h2>
+                    </div>
+
+                    <div class="background color">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: color;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>luminosity</h2>
+                    </div>
+                    <div class="background luminosity">
+
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">background-blend-mode: luminosity;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>

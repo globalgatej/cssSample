@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mix-blend-mode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: "Helvetica Neue",
+                Arial,
+                "Hiragino Kaku Gothic ProN",
+                "Hiragino Sans",
+                Meiryo,
+                sans-serif;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+
+        .multiply {
+            mix-blend-mode: multiply;
+        }
+
+        .screen {
+            mix-blend-mode: screen;
+        }
+
+        .overlay {
+            mix-blend-mode: overlay;
+        }
+
+        .darken {
+            mix-blend-mode: darken;
+        }
+
+        .lighten {
+            mix-blend-mode: lighten;
+        }
+
+        .color-dodge {
+            mix-blend-mode: color-dodge;
+        }
+
+        .color-burn {
+            mix-blend-mode: color-burn;
+        }
+
+        .hard-light {
+            mix-blend-mode: hard-light;
+        }
+
+        .soft-light {
+            mix-blend-mode: soft-light;
+        }
+
+        .difference {
+            mix-blend-mode: difference;
+        }
+
+        .exclusion {
+            mix-blend-mode: exclusion;
+        }
+
+        .hue {
+            mix-blend-mode: hue;
+        }
+
+        .saturation {
+            mix-blend-mode: saturation;
+        }
+
+        .color {
+            mix-blend-mode: color;
+        }
+
+        .luminosity {
+            mix-blend-mode: luminosity;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row py-4">
+            <div class="col">
+                <h1>mix-blend-modeの例</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>装飾なし</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0"><code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>multiply</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end multiply" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: multiply;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>screen</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end screen" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: screen;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>overlay</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end overlay" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: overlay;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>darken</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end darken" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: darken;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>lighten</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end lighten" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: lighten;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>color-dodge</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end color-dodge" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: color-dodge;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>color-burn</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end color-burn" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: color-burn;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>hard-light</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end hard-light" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: hard-light;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>soft-light</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end soft-light" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: soft-light;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>difference</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end difference" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: difference;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>exclusion</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end exclusion" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: exclusion;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>hue</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end hue" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: hue;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>saturation</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end saturation" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: saturation;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>color</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end color" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: color;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-4 mb-4">
+                <div class="border mx-2">
+                    <div class="p-3">
+                        <h2>luminosity</h2>
+                    </div>
+
+                    <div>
+                        <img src="img/filter.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div class="text-end luminosity" style="margin-top: -50px">
+                        <img src="img/blend.jpg" class="w-75 img-fluid" alt="">
+                    </div>
+                    <div>
+                        <pre class="bg-dark p-3 text-white mb-0">mix-blend-mode: luminosity;<code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
